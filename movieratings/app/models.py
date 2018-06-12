@@ -19,5 +19,5 @@ class MovieReview(models.Model):
     stars = models.IntegerField()
 
         ######### ForeignKeys #########
-    movie_review = models.ForeignKey(Reviewer, null=True, on_delete=models.SET_NULL)
+    reviewer = models.ForeignKey(Reviewer, null=True, on_delete=models.SET_NULL)
     movie = models.ForeignKey(Movie, null=True, on_delete=models.SET_NULL)
